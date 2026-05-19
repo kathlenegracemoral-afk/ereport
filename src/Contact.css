@@ -1,0 +1,169 @@
+/* Contact.css */
+
+.contact-page {
+  background: #f7f5f2;
+  min-height: 100vh;
+}
+
+/* HERO */
+
+.contact-hero {
+  background: #78aeb7;
+  height: 420px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  font-family: Georgia, serif;
+}
+
+.contact-hero p {
+  font-size: 28px;
+}
+
+.contact-page,
+.contact-page * {
+  color: black !important;
+}
+
+/* Inputs + textarea text */
+.contact-page input,
+.contact-page textarea {
+  color: black !important;
+}
+
+/* Placeholder text */
+.contact-page input::placeholder,
+.contact-page textarea::placeholder {
+  color: black !important;
+  opacity: 0.6;
+}
+
+/* Optional: ensure button text is black too */
+.contact-page button {
+  color: black !important;
+}
+
+/* CONTAINER */
+
+.contact-container {
+  padding: 50px;
+}
+
+.contact-container h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-family: Georgia, serif;
+}
+
+/* CONTENT */
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* FORM */
+
+.contact-form {
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #78aeb7;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 20px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  color: black;
+}
+
+.contact-form textarea {
+  margin-top: 20px;
+  resize: none;
+}
+
+.full-input {
+  width: 100%;
+}
+
+.contact-form button {
+  margin-top: 30px;
+  background: #78aeb7;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form button:hover {
+  opacity: 0.8;
+}
+
+/* FACEBOOK CARD */
+
+.facebook-card {
+  width: 300px;
+  background: #78aeb7;
+  border-radius: 25px;
+  padding: 35px 25px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.fb-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.fb-top img {
+  width: 40px;
+  height: 40px;
+}
+
+.fb-top h3 {
+  font-size: 22px;
+}
+
+.facebook-card p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* MAP */
+
+.map-container {
+  margin-top: 60px;
+}
+
+.map-container img {
+  width: 100%;
+  border-radius: 10px;
+}

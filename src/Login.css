@@ -1,0 +1,76 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0e7481 url('./images/signbg.png') no-repeat center center;
+    background-size: cover;
+    font-family: 'Serif', Georgia, serif;
+}
+
+.login-card {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.illustration-section img {
+    max-width: 450px;
+}
+
+.form-section {
+    width: 400px;
+    color: #333;
+}
+
+.form-section h1 {
+    color: white;
+    text-align: right;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background-color: #94b8bc; 
+    outline: none;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+}
+
+.login-btn {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    padding: 10px;
+    background-color: #94b8bc;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #7a9ea2;
+}

@@ -1,0 +1,193 @@
+/* ComplainantDashboard.css */
+
+.complainant-page {
+  min-height: 100vh;
+  background: #167b89;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.top-navbar {
+  width: 90%;
+  margin: auto;
+
+  background: #c9dde1;
+
+  border-radius: 10px;
+
+  padding: 12px 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left img {
+  width: 70px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-right a,
+.nav-right button {
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* TOP CARDS */
+
+.top-cards {
+  margin-top: 60px;
+
+  display: flex;
+  gap: 40px;
+}
+
+/* WELCOME CARD */
+
+.welcome-card {
+  flex: 1.2;
+
+  background: #e3edf0;
+
+  border-radius: 40px;
+
+  padding: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-card h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-family: Georgia, serif;
+}
+
+.welcome-card p {
+  font-size: 24px;
+  color: #333;
+}
+
+.welcome-img {
+  width: 280px;
+}
+
+/* SUMMARY */
+
+.summary-card {
+  flex: 1;
+
+  background: #d8e6ea;
+
+  border-radius: 40px;
+
+  padding: 40px;
+}
+
+.summary-card h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: Georgia, serif;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  font-size: 28px;
+}
+
+.summary-item .left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.summary-item img {
+  width: 28px;
+  height: 28px;
+}
+
+.summary-card h3 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 32px;
+}
+
+/* TABLE */
+
+.report-table-card {
+  margin-top: 70px;
+
+  background: #d8e6ea;
+
+  border-radius: 40px;
+
+  padding: 40px;
+
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 28px;
+  padding-bottom: 25px;
+}
+
+td {
+  text-align: center;
+  padding: 18px;
+  font-size: 24px;
+}
+
+.table-img {
+  width: 90px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* STATUS */
+
+.status {
+  padding: 10px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.status.Pending {
+  background: #78b7c1;
+}
+
+.status.Ongoing {
+  background: #8f68ff;
+}
+
+.status.Resolved {
+  background: #1db954;
+}
+
+.status.New {
+  background: #3d7cff;
+}

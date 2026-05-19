@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-page {
+  font-family: Georgia, serif;
+  background: #f5f3ef;
+  color: #2d2d2d;
+}
+
+/* HERO */
+
+.about-hero {
+  background: #0d7a8b;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 90px;
+}
+
+.hero-overlay {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px 150px;
+}
+
+.about-hero h1 {
+	color: white;
+  font-size: 48px;
+  margin-bottom: 35px;
+}
+
+.about-hero p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: #f5f3ef;
+  border-radius: 100% 100% 0 0;
+}
+
+/* MISSION VISION */
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mission-box,
+.vision-box {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.mission-box {
+  background: #f5f3ef;
+}
+
+.vision-box {
+  background: #315a63;
+  color: white;
+}
+
+.mission-box img,
+.vision-box img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.mission-box h2,
+.vision-box h2 {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.mission-box p,
+.vision-box p {
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* QUOTE */
+
+.quote-section {
+  background: #0d7a8b;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.quote-section h3 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+/* WHY SECTION */
+
+.why-section {
+  padding: 90px 30px;
+  text-align: center;
+}
+
+.why-section h2 {
+  font-size: 45px;
+  margin-bottom: 70px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.why-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.why-card img {
+  width: 100px;
+}
+
+.why-card h3 {
+  font-size: 28px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.safer-card {
+  grid-column: span 2;
+  justify-content: center;
+}
+
+/* PRIVACY */
+
+.privacy-section {
+  background: #315a63;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.privacy-section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.privacy-section p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* FAQ */
+
+.faq-section {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 60px;
+  padding: 90px 50px;
+}
+
+.faq-small {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.faq-left h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.faq-left p {
+  line-height: 1.8;
+}
+
+.faq-left button {
+  margin-top: 30px;
+  padding: 12px 35px;
+  border: none;
+  background: #0d7a8b;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* FAQ TOGGLE */
+
+.faq-right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.faq-item input {
+  display: none;
+}
+
+.faq-question {
+  background: #0d7a8b;
+  color: white;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.arrow {
+  transition: 0.3s;
+}
+
+.faq-answer {
+  background: #e8e8e8;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer p {
+  padding: 20px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.faq-item input:checked ~ .faq-answer {
+  max-height: 300px;
+}
+
+.faq-item input:checked + .faq-question .arrow {
+  transform: rotate(180deg);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .mission-vision {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .safer-card {
+    grid-column: span 1;
+  }
+
+  .faq-section {
+    grid-template-columns: 1fr;
+  }
+
+  .why-card {
+    flex-direction: column;
+  }
+
+  .why-card h3 {
+    text-align: center;
+  }
+
+  .about-hero h1 {
+    font-size: 38px;
+  }
+
+  .why-section h2,
+  .privacy-section h2,
+  .faq-left h2 {
+    font-size: 34px;
+  }
+
+}
